@@ -1,7 +1,8 @@
 import css from "./page.module.css";
-const Home = () => {
+
+export default function Home() {
   return (
-    <main>
+    <main className={css.main}>
       <div className={css.container}>
         <h1 className={css.title}>Welcome to NoteHub</h1>
         <p className={css.description}>
@@ -18,6 +19,4 @@ const Home = () => {
       </div>
     </main>
   );
-};
-
-export default Home;
+}

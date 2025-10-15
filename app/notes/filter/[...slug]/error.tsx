@@ -1,4 +1,4 @@
-// app/notes/[id]/error.tsx
+// app/notes/error.tsx
 "use client";
 
 interface Props {
@@ -6,5 +6,5 @@ interface Props {
 }
 
 export default function Error({ error }: Props) {
-  return <h1>Could not fetch note details. {error.message}</h1>;
+  return <p>Could not fetch the list of notes. {error.message}</p>;
 }
